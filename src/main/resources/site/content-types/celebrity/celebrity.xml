@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<content-type>
+	<display-name>Celebrity</display-name>
+	<super-type>base:structured</super-type>
+	<form>
+		<input name="description" type="HtmlArea">
+			<label>Description</label>
+			<default>
+				<p>Enter description here</p>
+			</default>
+		</input>
+		<input type="TextLine" name="age">
+			<label>Age</label>
+			<occurrences minimum="0" maximum="1"/>
+		</input>
+		<input name="photo" type="ImageSelector">
+			<label>Celebrity photo</label>
+			<occurrences minimum="0" maximum="3"/>
+			<config>
+				<allowPath>./*</allowPath>
+			</config>
+		</input>
+		<input name="active" type="RadioButton">
+			<label>Active</label>
+			<occurrences minimum="0" maximum="1"/>
+			<config>
+				<option value="yes">Yes</option>
+				<option value="no">No</option>
+			</config>
+			<default>yes</default>
+		</input>
+	</form>
+</content-type>

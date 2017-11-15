@@ -1,0 +1,6 @@
+<div class="xp-part country">
+    <h1 data-th-text="${portal.localize({'_key=site_header'})} + ${name}"></h1>
+    <p data-th-if="${population}" data-th-text="|${portal.localize({'_key=celeb_population'})}: | + ${population}|"></p>
+    <p data-th-if="${description}" data-th-text="${description}"></p>
+    <p data-th-if="${euMember}" data-th-utext="|<b>${name}</b> is a EU member|"></p>
+</div>

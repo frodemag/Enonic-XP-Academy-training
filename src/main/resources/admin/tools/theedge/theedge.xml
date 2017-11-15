@@ -1,0 +1,8 @@
+<tool>
+  <display-name>The Edge</display-name>
+  <description>The Edge can control everything</description>
+  <allow>
+    <principal>role:system.admin</principal>
+    <principal>role:myapp.myrole</principal>
+  </allow>
+</tool>

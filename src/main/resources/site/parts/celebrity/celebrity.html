@@ -1,0 +1,16 @@
+<div class="xp-part">
+	<h2 data-th-text="${displayName}"></h2>
+	<div data-th-if="${active}">Active</div>
+	<p data-th-if="${age}" data-th-text="${portal.localize({'_key=celeb_age'})} + ${age}"></p>
+	<div class="image-container">
+		<img src="" data-th-if="${photo}" data-th-src="${photo}" alt="">
+	</div>
+	<div class="html-area">
+		<div data-th-utext="${htmlArea}">Active</div>
+		<div class="image-container">	
+			<th-block src="" data-th-each="imageUrl : ${imageUrls}">
+					<img data-th-src="${imageUrl}"/>
+			</th-block> 
+		</div>
+	</div>
+</div>

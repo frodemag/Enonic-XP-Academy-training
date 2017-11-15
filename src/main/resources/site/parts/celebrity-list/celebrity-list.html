@@ -1,0 +1,8 @@
+<div class="xp-part celebrities">
+    <h2 data-th-text="${portal.localize({'_key=celeb_header'})}">...</h2>
+    <div class="celebrity" data-th-each="celebrity : ${celebrities}">
+        <h3><a data-th-href="${celebrity.url}" data-th-text="${celebrity.name}">Read more</a></h3>
+        
+        <img data-th-src="${portal.imageUrl({'_id=' + celebrity.photo, '_scale=block(100,100)'})}"/>
+    </div>
+</div>

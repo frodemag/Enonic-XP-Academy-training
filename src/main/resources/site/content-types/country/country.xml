@@ -1,0 +1,19 @@
+<content-type>
+  <display-name>Country</display-name>
+  <super-type>base:structured</super-type>
+  <form>
+    <input type="TextArea" name="description">
+      <label>Description</label>
+      <occurrences minimum="0" maximum="1"/>
+    </input>
+    <inline mixin="population" />
+    <input name="euMember" type="CheckBox">
+      <label>Is EU member</label>
+      <occurrences minimum="0" maximum="1"/>
+      <config>
+        <alignment>right</alignment>
+      </config>
+    </input>
+    <!-- Mixin of the type "inline" goes here -->
+  </form>
+</content-type>

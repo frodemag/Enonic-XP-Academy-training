@@ -1,0 +1,18 @@
+<div class="xp-part banner">
+	<div class="todays-date">
+		<div data-th-if="${todaysDate}" data-th-text="${todaysDate}"></div>
+	</div>
+	<div class="image-container">
+		<img src="" data-th-if="${config.imageUrl}" data-th-src="${config.imageUrl}" alt="">
+	</div>
+	<div class="overlay">
+		<h3 data-th-text="${config.header}">Replace this text</h3>
+		<p data-th-text="${config.description}">Replace this text</p>
+		<!-- <div class="url-container">
+				<th-block href="" data-th-each="country : ${countries}">
+					<a data-th-href="${country.url}" data-th-text="${country.name}">Read more</a>
+				</th-block>
+			
+		</div> -->
+	</div>
+</div>

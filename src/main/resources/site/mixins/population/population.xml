@@ -1,0 +1,6 @@
+<mixin>
+    <input type="TextLine" name="population">
+        <label>Population</label>
+        <occurrences minimum="0" maximum="1"/>
+    </input>
+</mixin>

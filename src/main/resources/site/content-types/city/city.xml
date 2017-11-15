@@ -1,0 +1,12 @@
+<content-type>
+  <display-name>City</display-name>
+  <super-type>base:structured</super-type>
+  <form>
+    <input type="GeoPoint" name="location">
+      <label>Location</label>
+      <occurrences minimum="1" maximum="1"/>
+    </input>
+    <inline mixin="population" />
+    <!-- Mixin of the type "inline" goes here -->
+  </form>
+</content-type>
